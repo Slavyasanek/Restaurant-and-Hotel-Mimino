@@ -2,20 +2,20 @@
   "name": "restaurant-and-hotel-mimino",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Slavyasanek.github.io/Restaurant-and-Hotel-Mimino",
+  "homepage": "https://slavyasanek.github.io/Restaurant-and-Hotel-Mimino/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Restaurant-and-Hotel-Mimino/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Slavyasanek/Restaurant-and-Hotel-Mimino.git"
+    "url": "git+https://github.com/slavyasanek/Restaurant-and-Hotel-Mimino.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Slavyasanek/Restaurant-and-Hotel-Mimino/issues"
+    "url": "https://github.com/slavyasanek/Restaurant-and-Hotel-Mimino/issues"
   },
   "dependencies": {
     "imask": "^6.4.3",
