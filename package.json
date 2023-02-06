@@ -2,7 +2,7 @@
   "name": "Restaurant-and-Hotel-Mimino",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Slavyasanek.github.io/parcel-project-template",
+  "homepage": "https://Slavyasanek.github.io/Restaurant-and-Hotel-Mimino",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Restaurant-and-Hotel-Mimino/"
