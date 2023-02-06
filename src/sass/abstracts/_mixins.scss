@@ -1,0 +1,36 @@
+// mixins for adaptive
+
+@mixin max_413 {
+  @media screen and (max-width: 413px) {
+    @content;
+  }
+}
+
+@mixin min_414 {
+  @media screen and (min-width: 414px) {
+    @content;
+  }
+}
+
+@mixin max_1023 {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin min_1024 {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin max_1279 {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}
+@mixin min_1280 {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
