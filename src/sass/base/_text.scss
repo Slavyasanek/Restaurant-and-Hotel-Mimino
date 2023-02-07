@@ -44,3 +44,39 @@
     }
   }
 }
+
+.modal {
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--dark-color-for-elemenents-and-text);
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    @include min_1024 {
+      font-size: 40px;
+    }
+  }
+  &__label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--brown-yellow-text-color);
+    margin-top: 8px;
+    margin-left: 12px;
+    &:first-of-type {
+        margin-bottom: 20px;
+        @include min_1024 {
+            margin-bottom: 28px;
+        }
+    }
+    @include min_1024 {
+      font-size: 16px;
+    }
+  }
+}
