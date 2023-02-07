@@ -34,3 +34,20 @@
     @content;
   }
 }
+
+// retina
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// padding
+
+@mixin paddingY($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
