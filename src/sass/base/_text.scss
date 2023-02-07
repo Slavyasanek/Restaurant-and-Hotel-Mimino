@@ -60,6 +60,15 @@
       font-size: 40px;
     }
   }
+  &__subtitle {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--forms-placeholder-font-color);
+    margin-bottom: 28px;
+  }
   &__label {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -69,11 +78,12 @@
     color: var(--brown-yellow-text-color);
     margin-top: 8px;
     margin-left: 12px;
-    &:first-of-type {
-        margin-bottom: 20px;
-        @include min_1024 {
-            margin-bottom: 28px;
-        }
+    margin-bottom: 20px;
+    @include min_1024 {
+      margin-bottom: 28px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
     }
     @include min_1024 {
       font-size: 16px;
