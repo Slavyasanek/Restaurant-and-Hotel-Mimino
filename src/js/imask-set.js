@@ -2,8 +2,7 @@ import IMask from 'imask';
 
 function inputMask() {
   const maskInputs = document.querySelectorAll('.js-inputmask');
-  const maskInputs01 = document.querySelectorAll('.js-inputmask-01');
-
+  const maskInputsdate = document.querySelectorAll('.js-inputmask-date');
   if (maskInputs.length > 0) {
     maskInputs.forEach(input => {
       var maskOptions = {
@@ -14,14 +13,34 @@ function inputMask() {
     });
   }
   ////
-  if (maskInputs01.length > 0) {
-    maskInputs01.forEach(input => {
+  if (maskInputsdate.length > 0) {
+    maskInputsdate.forEach(input => {
       var maskOptions = {
-        mask: '+{80}(000)000-00-00',
+        mask: 'DD.MM.YYYY',
         lazy: false,
+        blocks: {
+          YYYY: {
+            mask: IMask.MaskedRange,
+            from: 2022,
+            to: 2023,
+          },
+
+          MM: {
+            mask: IMask.MaskedRange,
+            from: 1,
+            to: 12,
+          },
+
+          DD: {
+            mask: IMask.MaskedRange,
+            from: 1,
+            to: 31,
+          },
+        },
       };
       var mask = IMask(input, maskOptions);
     });
   }
 }
+
 inputMask();
