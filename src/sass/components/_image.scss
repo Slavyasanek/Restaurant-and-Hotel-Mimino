@@ -1,0 +1,15 @@
+.image-main__shadow {
+  box-shadow: 2px 2px 60px 2px var(--color-of-shadow-for-images);
+  border-radius: 2px;
+  @include between_1024_1279 {
+    box-shadow: 5px 5px 70px 17px var(--color-of-shadow-for-images);
+  }
+}
+
+.image-additional__shadow {
+  box-shadow: 2px 2px 60px 2px var(--color-of-shadow-for-images);
+  border-radius: 2px;
+  @include min_1024 {
+    box-shadow: 5px 5px 70px 17px var(--color-of-shadow-for-images);
+  }
+}
