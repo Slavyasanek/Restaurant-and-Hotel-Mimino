@@ -1,0 +1,41 @@
+.social-icon__link {
+  fill: var(--lighter-decorative-YellowAkzent-for-bordersIcons);
+  transition: fill 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
+  &:hover,
+  &:focus,
+  &:active {
+    fill: var(--text-on-dark-background-and-white-elements);
+  }
+}
+
+.button--dark-transparent {
+  background-color: var(--buttons-background);
+  border: 2px solid var(--text-on-dark-background-and-white-elements);
+  width: 236px;
+  @include paddingY(14px);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--hover-and-decorative-YellowAkzent);
+  border-radius: 25px;
+  transition: border-color 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08),
+    background-color 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--text-on-dark-background-and-white-elements);
+    border-color: var(--hover-and-decorative-YellowAkzent);
+  }
+}
+
+.hero__button {
+  @include min_1280 {
+    width: 258px;
+  }
+}
+
+.icon-location {
+  fill: var(--hover-and-decorative-YellowAkzent);
+  transition: fill 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
+  flex-shrink: 0;
+}
