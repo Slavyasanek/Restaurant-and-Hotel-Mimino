@@ -38,4 +38,7 @@
   fill: var(--hover-and-decorative-YellowAkzent);
   transition: fill 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
   flex-shrink: 0;
+  .hero__address:hover & {
+    fill: var(--lighter-text-on-dark-background);
+  }
 }
