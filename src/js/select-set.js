@@ -6,7 +6,7 @@ function customSelect() {
       NiceSelect.bind(select, {
         searchable: true, // false
         placeholder: 'select',
-        searchtext: 'Виберіть кількість осіб',
+        searchtext: '...',
         selectedtext: 'geselecteerd',
       });
     });
