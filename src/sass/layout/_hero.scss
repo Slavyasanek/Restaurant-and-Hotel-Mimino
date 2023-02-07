@@ -66,6 +66,104 @@
     }
   }
 
+  &--restaurant {
+    background-image: linear-gradient(
+        to top,
+        var(--overlay-for-back-images-hero),
+        var(--overlay-for-back-images-hero)
+      ),
+      url('../images/heroes/restaurant-hero-mobile@1x.jpg');
+    @include retina {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/heroes/restaurant-hero-mobile@2x.jpg');
+    }
+    @include min_1024 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/heroes/restaurant-hero-tablet@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/heroes/restaurant-hero-tablet@2x.jpg');
+      }
+    }
+    @include min_1280 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/heroes/restaurant-hero-desktop@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/heroes/restaurant-hero-desktop@2x.jpg');
+      }
+    }
+  }
+
+  &--hotel {
+    background-image: linear-gradient(
+        to top,
+        var(--overlay-for-back-images-hero),
+        var(--overlay-for-back-images-hero)
+      ),
+      url('../images/heroes/hotel-hero-mobile@1x.jpg');
+    @include retina {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/heroes/hotel-hero-mobile@2x.jpg');
+    }
+    @include min_1024 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/heroes/hotel-hero-tablet@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/heroes/hotel-hero-tablet@2x.jpg');
+      }
+    }
+    @include min_1280 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/heroes/hotel-hero-desktop@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/heroes/hotel-hero-desktop@2x.jpg');
+      }
+    }
+  }
+
   &__title {
     font-family: 'Film P3', sans-serif;
     font-weight: 700;
@@ -93,8 +191,6 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--text-on-dark-background-and-white-elements);
-    margin-top: 24px;
-    margin-bottom: 40px;
     @include min_1024 {
       font-size: 20px;
       line-height: 1.2;
@@ -104,6 +200,30 @@
     @include min_1280 {
       margin-top: 32px;
       margin-bottom: 64px;
+    }
+    &--homepage {
+      @include max_1023 {
+        margin-top: 24px;
+        margin-bottom: 40px;
+      }
+    }
+    &--restaurant {
+      @include max_1023 {
+        margin-top: 20px;
+        margin-bottom: 44px;
+      }
+    }
+    &--hotel {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 178px;
+      @include min_1024 {
+        margin-top: 32px;
+        margin-bottom: 218px;
+      }
+      @include min_1280 {
+        margin-bottom: 242px;
+      }
     }
   }
   &__slogan {
@@ -140,8 +260,7 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: var(--text-on-dark-background-and-white-elements);
-      border-color: var(--hover-and-decorative-YellowAkzent);
+      border-color: var(--lighter-text-on-dark-background);
       color: var(--hover-and-decorative-YellowAkzent);
     }
     @include max_1023 {
