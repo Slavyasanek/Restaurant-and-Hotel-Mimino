@@ -1,0 +1,95 @@
+.about-restaurant {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  @include min_1024 {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  @include min_1280 {
+    padding-bottom: 50px;
+  }
+  &__intro {
+    display: flex;
+    @include max_1023 {
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+  }
+  &__title {
+    margin-bottom: 12px;
+    @include min_1024 {
+      margin-bottom: 24px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 12px;
+    @include min_1024 {
+      margin-bottom: 4px;
+    }
+  }
+  &__text {
+    max-width: 258px;
+    @include max_1023 {
+      margin-bottom: 28px;
+    }
+    @include min_1024 {
+      max-width: 439px;
+    }
+    @include min_1280 {
+      max-width: 518px;
+    }
+  }
+  &__preferences {
+    @include max_413 {
+      margin-top: 20px;
+      align-self: flex-end;
+      max-width: 258px;
+    }
+    @include min_414 {
+      margin-left: 20px;
+    }
+    @include min_1024 {
+      margin-left: 48px;
+      max-width: 312px;
+    }
+    @include min_1280 {
+      margin-left: 32px;
+    }
+  }
+  &__interior-img {
+    position: relative;
+    @include max_1023 {
+      align-self: end;
+    }
+    @include min_1024 {
+      margin-top: -152px;
+      margin-left: 26px;
+    }
+    @include min_1280 {
+      margin-top: -153px;
+      margin-left: 37px;
+    }
+  }
+  &__tables-img {
+    align-self: flex-start;
+  }
+  &__conclusion {
+    display: flex;
+    @include max_413 {
+      flex-direction: column;
+    }
+    @include min_414 {
+      align-items: center;
+    }
+    @include min_1024 {
+      margin-top: -18px;
+    }
+    @include min_1280 {
+      margin-top: -75px;
+    }
+  }
+  &__decorative {
+    display: flex;
+    flex-direction: column;
+  }
+}
