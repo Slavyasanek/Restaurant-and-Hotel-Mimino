@@ -9,10 +9,12 @@
 @import './base/container';
 
 @import './components/buttons';
+@import './components/minislider';
 
 // pages
 
 @import './layout/header';
 @import './layout/hero';
 @import './layout/hero-slider';
+@import './layout/about_restaurant';
 @import './layout/footer';
