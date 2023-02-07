@@ -1,11 +1,22 @@
 .container {
-    max-width: 414px;
-    padding: 0 15px;
-    margin: 0 auto;
-    @media screen and (min-width: 1024px) {
-        max-width: 930px;
-    }
-    @media screen and (min-width: 1280px){
-        max-width: 1110px;
-    }
+  max-width: 414px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include min_1024 {
+    max-width: 930px;
+  }
+  @include min_1280 {
+    max-width: 1110px;
+  }
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
