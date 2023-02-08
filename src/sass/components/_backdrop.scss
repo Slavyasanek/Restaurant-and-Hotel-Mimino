@@ -205,6 +205,9 @@ body.lock {
       top: 27px;
     }
   }
+  &.open::after {
+    border-color: var(--hover-and-decorative-YellowAkzent);
+  }
   &:hover,
   &:focus,
   &:active {
