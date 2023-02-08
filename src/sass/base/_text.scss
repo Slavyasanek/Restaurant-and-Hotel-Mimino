@@ -13,6 +13,9 @@
     @include min_1024 {
       font-size: 64px;
     }
+    &--light {
+      color: var(--text-on-dark-background-and-white-elements);
+    }
   }
   &__subtitle {
     color: var(--subtitles-font-color);
@@ -24,7 +27,7 @@
       font-size: 32px;
     }
   }
-  &__text--dark {
+  &__text {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -32,16 +35,20 @@
     @media screen and (min-width: 1024px) {
       font-size: 16px;
     }
-  }
-  &__text--darkyellow {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: var(--brown-yellow-text-color);
-    @include min_1024 {
-      font-size: 16px;
+    &--light {
+      color: var(--grey-text-on-dark-background);
     }
+    &--darkyellow {
+      color: var(--brown-yellow-text-color);
+    }
+  }
+  &__department {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-on-dark-background-and-white-elements);
   }
 }
 
