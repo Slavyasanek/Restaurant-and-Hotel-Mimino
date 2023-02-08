@@ -8,25 +8,12 @@ function swiperSlider() {
           let arrowRight = slider.querySelector('.swiper-button-next');
           //
     
-          // let pagination = slider.querySelector('.swiper-pagination');
           swiper = new Swiper(slider.querySelector('.swiper'), {
             speed: 1500,
             // centeredSlides: true,
-            // autoplay: {
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // },
-    
+
             slidesPerView: 2,
             spaceBetween: 20,
-            // pagination: {
-            //     el: pagination,
-            //     clickable: true,
-            //     renderBullet: function (index, className) {
-            //         return '<li class="' + className + '"></li>';
-            //     },
-            // },
-            //
             navigation: {
               nextEl: arrowRight,
               prevEl: arrowLeft,
