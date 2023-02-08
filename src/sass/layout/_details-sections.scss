@@ -4,6 +4,8 @@
   background-size: cover;
   padding-top: 24px;
   padding-bottom: 40px;
+  max-width: 2000px;
+  margin: 0 auto;
   @include min_1024 {
     padding-top: 48px;
   }
@@ -55,6 +57,54 @@
       }
     }
   }
+  &--hotel {
+    background-image: linear-gradient(
+        to top,
+        var(--overlay-for-back-images-hero),
+        var(--overlay-for-back-images-hero)
+      ),
+      url('../images/homepage_details-about-hotel/hotel-background-mobile@1x.jpg');
+    @include retina {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/homepage_details-about-hotel/hotel-background-mobile@2x.jpg');
+    }
+    @include min_1024 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/homepage_details-about-hotel/hotel-background-tablet@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/homepage_details-about-hotel/hotel-background-tablet@2x.jpg');
+      }
+    }
+    @include min_1280 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/homepage_details-about-hotel/hotel-background-desktop@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/homepage_details-about-hotel/hotel-background-desktop@2x.jpg');
+      }
+    }
+  }
   &--flex {
     display: flex;
     flex-direction: column;
@@ -62,6 +112,11 @@
       @include min_1024 {
         flex-direction: row-reverse;
         justify-content: space-between;
+      }
+    }
+    &-hotel {
+      @include min_1024 {
+        flex-direction: row;
       }
     }
   }
@@ -75,7 +130,7 @@
     max-width: 259px;
     margin-bottom: 48px;
     @include min_1024 {
-      max-width: 100%;
+      max-width: 549px;
       margin-bottom: 40px;
     }
     @include min_1280 {
@@ -88,6 +143,10 @@
     }
     &--hotel {
       align-self: flex-start;
+      text-align: right;
+      @include min_1024 {
+        align-self: flex-end;
+      }
     }
   }
   &__buttons {
