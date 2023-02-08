@@ -8,7 +8,7 @@ function swiperSlider() {
           //
     
           // let pagination = slider.querySelector('.swiper-pagination');
-          swiper = new Swiper(slider.querySelector('.swiper'), {
+          let swiper = new Swiper(slider.querySelector('.swiper'), {
             speed: 2000,
             loop: true,
             centeredSlides: true,
