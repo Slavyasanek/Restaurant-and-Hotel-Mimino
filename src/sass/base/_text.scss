@@ -16,6 +16,9 @@
     &--light {
       color: var(--text-on-dark-background-and-white-elements);
     }
+    & > span {
+      letter-spacing: normal;
+    }
   }
   &__subtitle {
     color: var(--subtitles-font-color);
@@ -37,6 +40,7 @@
     }
     &--light {
       color: var(--grey-text-on-dark-background);
+      text-align: left;
     }
     &--darkyellow {
       color: var(--brown-yellow-text-color);
@@ -54,6 +58,7 @@
     @include min_1024 {
       margin-top: 16px;
       margin-bottom: 8px;
+      font-size: 24px;
     }
   }
 }
