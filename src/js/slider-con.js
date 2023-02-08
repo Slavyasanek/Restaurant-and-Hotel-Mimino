@@ -13,6 +13,8 @@ function swiperSlider() {
         speed: 1500,
         // loop: true,
         //centeredSlides: true,
+        loopFillGroupWithBlank: true,
+        slidesPerGroup: 1,
         centeredSlides: true,
         // autoplay: {
         //     delay: 3000,
@@ -64,13 +66,13 @@ function swiperSlider() {
             slidesPerView: 2,
             spaceBetween: 40,
             centeredSlides: false,
-          },
+          }
           // when window width is >= 640px
           // 1280: {
           //   slidesPerView: 3,
           //   spaceBetween: 40,
           // },
-        },
+        }
       });
     });
   }
