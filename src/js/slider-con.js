@@ -1,6 +1,6 @@
 function swiperSlider() {
   const miniSlider = document.querySelectorAll('[data-slider="mini-slider"]');
-  const Slider = document.querySelectorAll('[data-slider="slider"]');
+  const miniSlider2 = document.querySelectorAll('[data-slider="mini-slider-2"]');
  
   if (miniSlider) {
     miniSlider.forEach(slider => {
@@ -75,8 +75,8 @@ function swiperSlider() {
       });
     });
   }
-  if (Slider) {
-    Slider.forEach(slider => {
+  if (miniSlider2) {
+    miniSlider2.forEach(slider => {
       //
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');

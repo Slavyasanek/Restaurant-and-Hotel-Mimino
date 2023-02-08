@@ -1,0 +1,87 @@
+.about-hotel {
+  padding-top: 18px;
+  padding-bottom: 20px;
+  @include min_1024 {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  @include min_1280 {
+    padding-bottom: 50px;
+  }
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    @include min_1024 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+  }
+  &__text {
+    text-align: right;
+    max-width: 242px;
+    align-self: flex-end;
+    @include max_1023 {
+      margin-bottom: 28px;
+    }
+    @include min_1024 {
+      max-width: 419px;
+      align-self: flex-start;
+    }
+    @include min_1280 {
+        max-width: 488px;
+    }
+  }
+  &__title {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    @include min_1024 {
+        margin-top: 4px;
+        margin-bottom: 24px;
+    }
+  }
+  &__interior-img {
+    align-self: flex-start;
+    @include min_1024 {
+        margin-top: -144px;
+        position: relative;
+        z-index: 2;
+    }
+  }
+  &__conclusion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+    @media screen and (max-width: 300px) {
+      flex-direction: column;
+    }
+    @include min_1024 {
+        justify-content: end;
+        margin-top: -20px;
+    }
+    @include min_1280 {
+        margin-top: -40px;
+    }
+  }
+  &__preferences {
+    margin-right: 20px;
+    @media screen and (max-width: 300px) {
+      margin-bottom: 20px;
+    }
+    @include min_1024 {
+        max-width: 312px;
+        margin-right: 48px;
+    }
+  }
+  &__slider {
+    @include min_1024 {
+        align-self: flex-start;
+    }
+    .swiper-button-next {
+        margin-right: 32px;
+    }
+    .swiper-button-prev {
+        margin-right: 0;
+    }
+  }
+}
