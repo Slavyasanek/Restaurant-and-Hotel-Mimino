@@ -1,0 +1,58 @@
+.details {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  @include min_1024 {
+    padding-top: 48px;
+  }
+  &--restaurant {
+    background-image: linear-gradient(
+        to top,
+        var(--overlay-for-back-images-hero),
+        var(--overlay-for-back-images-hero)
+      ),
+      url('../images/homepage_details-about-restaurant/restaurant-background-mobile@1x.jpg');
+    @include retina {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/homepage_details-about-restaurant/restaurant-background-mobile@2x.jpg');
+    }
+    @include min_1024 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/homepage_details-about-restaurant/restaurant-background-tablet@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/homepage_details-about-restaurant/restaurant-background-tablet@2x.jpg');
+      }
+    }
+    @include min_1280 {
+      background-image: linear-gradient(
+          to top,
+          var(--overlay-for-back-images-hero),
+          var(--overlay-for-back-images-hero)
+        ),
+        url('../images/homepage_details-about-restaurant/restaurant-background-desktop@1x.jpg');
+      @include retina {
+        background-image: linear-gradient(
+            to top,
+            var(--overlay-for-back-images-hero),
+            var(--overlay-for-back-images-hero)
+          ),
+          url('../images/homepage_details-about-restaurant/restaurant-background-desktop@2x.jpg');
+      }
+    }
+  }
+}
