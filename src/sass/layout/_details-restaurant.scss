@@ -55,4 +55,51 @@
       }
     }
   }
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    &-restaurant {
+      @include min_1024 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__interaction {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 259px;
+    margin-bottom: 48px;
+    @include min_1024 {
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+    @include min_1280 {
+      max-width: 610px;
+    }
+    &--restaurant {
+      @include max_1023 {
+        align-self: flex-end;
+      }
+    }
+    &--hotel {
+      align-self: flex-start;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    @include min_1024 {
+      justify-content: end;
+      padding-bottom: 61px;
+    }
+  }
 }
