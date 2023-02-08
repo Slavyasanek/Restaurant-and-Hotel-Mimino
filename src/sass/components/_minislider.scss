@@ -13,10 +13,10 @@
     // тінь
     margin-top: -60px;
     padding-top: 60px;
-    @media screen and (min-width: 414px) {
+    @include min_414 {
       margin-right: -15px;
     }
-    @media screen and (min-width: 1024px) {
+    @include min_1024 {
       margin-right: -20px;
       margin-left: -20px;
       padding-left: 20px;
@@ -24,10 +24,10 @@
     }
   }
   .swiper-wrapper {
-    @media screen and (min-width: 1024px) {
+    @include min_1024 {
       max-width: 428px;
     }
-    @media screen and (min-width: 1280px) {
+    @include min_1280 {
       max-width: 548px;
     }
   }
@@ -35,19 +35,20 @@
   .swiper-slide {
     max-width: 245px !important;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
     & .swiper-inner > img {
       object-fit: contain;
     }
-    @media screen and (max-width: 1023px) {
+    @include max_1023 {
       &.swiper-slide-next,
       &.swiper-slide-prev {
         opacity: 0.5;
       }
     }
-    @media screen and (min-width: 1024px) {
+    @include min_1024 {
       max-width: 194px !important;
     }
-    @media screen and (min-width: 1280px) {
+    @include min_1280 {
       max-width: 254px !important;
     }
   }
