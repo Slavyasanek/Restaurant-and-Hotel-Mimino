@@ -49,6 +49,12 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--text-on-dark-background-and-white-elements);
+    margin-top: 12px;
+    margin-bottom: 20px;
+    @include min_1024 {
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
   }
 }
 
