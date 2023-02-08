@@ -10,9 +10,7 @@ function swiperSlider() {
           // let pagination = slider.querySelector('.swiper-pagination');
           swiper = new Swiper(slider.querySelector('.swiper'), {
             speed: 1500,
-            // loop: true,
-            //centeredSlides: true,
-            centeredSlides: true,
+            // centeredSlides: true,
             // autoplay: {
             //     delay: 3000,
             //     disableOnInteraction: false,
@@ -55,20 +53,20 @@ function swiperSlider() {
               // when window width is >= 0px
               0: {
                 slidesPerView: 'auto',
-                // centeredSlides: true,
+                centeredSlides: true,
                 spaceBetween: 20,
               },
-              // when window width is >= 1280px
+              // when window width is >= 1024px
               1024: {
                 slidesPerView: 3,
                 spaceBetween: 34,
-                centeredSlides: true,
+                // centeredSlides: false,
               },
-              // when window width is >= 640px
-              // 1280: {
-              //   slidesPerView: 3,
-              //   spaceBetween: 40,
-              // },
+              // when window width is >= 1280px
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 87,
+              },
             },
           });
         });
