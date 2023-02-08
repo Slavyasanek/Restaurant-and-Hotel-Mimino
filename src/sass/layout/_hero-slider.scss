@@ -125,7 +125,7 @@
   &__socials {
     margin-right: 72px;
     display: inline-flex;
-    @media screen and (max-width: 352px) {
+    @media screen and (max-width: 400px) {
       margin-right: 0;
     }
     @include min_1024 {
@@ -152,7 +152,8 @@
     }
   }
   &__button {
-    @media screen and (min-width: 353px) and (max-width: 1023px) {
+    display: inline-flex;
+    @media screen and (min-width: 352px) and (max-width: 1023px) {
       transform: translateY(50%);
     }
     @include between_1024_1279 {
