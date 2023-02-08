@@ -1,0 +1,114 @@
+.slider__diff {
+  @include min_1024 {
+    margin-left: 30px;
+    margin-right: -30px;
+  }
+  @include min_1280 {
+    margin-left: 32px;
+    margin-right: -33px;
+  }
+  .swiper-wrapper {
+    @include min_1024 {
+      max-width: 662px;
+    }
+    @include min_1280 {
+      max-width: 876px;
+    }
+  }
+  .swiper-slide {
+    width: 274px !important;
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    @include between_1024_1279 {
+      width: 162px !important;
+      min-height: 270px;
+      & .swiper-inner {
+        transition: all 0.5s ease-in-out;
+        min-height: 270px;
+        width: 162px !important;
+        & .swiper-img {
+          transition: all 0.5s ease-in-out;
+          object-fit: cover;
+          min-height: 270px;
+          width: 100%;
+        }
+      }
+    }
+    @include min_1280 {
+      width: 270px !important;
+      min-height: 270px;
+      & .swiper-inner {
+        transition: all 0.5s ease-in-out;
+        min-height: 270px;
+        width: 270px !important;
+        & .swiper-img {
+          transition: all 0.5s ease-in-out;
+          object-fit: cover;
+          min-height: 270px;
+          width: 100%;
+        }
+      }
+    }
+    &.swiper-slide-active {
+      transition: all 0.5s ease-in-out;
+      @include between_1024_1279 {
+        width: 270px !important;
+        & .swiper-inner {
+          transition: all 0.5s ease-in-out;
+          min-height: 270px;
+          width: 270px !important;
+          & .swiper-img {
+            transition: all 0.5s ease-in-out;
+            object-fit: cover;
+            min-height: 270px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &.swiper-slide-prev {
+      @include max_1023 {
+        opacity: 0.5;
+      }
+    }
+    &.swiper-slide-next {
+      transition: all 0.5s ease-in-out;
+      @include max_1023 {
+        opacity: 0.5;
+      }
+      @include min_1280 {
+        width: 162px !important;
+        min-height: 270px;
+        & .swiper-inner {
+          transition: all 0.5s ease-in-out;
+          min-height: 270px;
+          width: 162px !important;
+          & .swiper-img {
+            transition: all 0.5s ease-in-out;
+            object-fit: cover;
+            min-height: 270px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .swiper-btns {
+    justify-content: flex-start;
+    margin-top: 16px;
+    @include min_1024 {
+      margin-top: 24px;
+    }
+  }
+  .swiper-btn {
+    fill: var(--text-on-dark-background-and-white-elements);
+    &:disabled {
+      fill: var(--dark-color-for-elemenents-and-text);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      fill: var(--hover-and-decorative-YellowAkzent);
+    }
+  }
+}
