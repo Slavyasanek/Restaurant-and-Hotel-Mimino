@@ -6,6 +6,8 @@ body {
   background-color: var(--main-bcg);
   color: var(--main-font-color);
   font-family: 'Montserrat', sans-serif;
+  min-width: 400px;
+  overflow-x: hidden;
 }
 
 h1,

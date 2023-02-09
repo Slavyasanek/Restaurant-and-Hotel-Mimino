@@ -3,6 +3,7 @@
   z-index: 3;
   top: 0;
   width: 100%;
+  min-width: 400px;
   padding-top: 16px;
   padding-bottom: 9px;
   @include min_1024 {
@@ -46,7 +47,7 @@
 
 .navigation {
   &__list {
-    @media screen and (max-width: 357px) {
+    @media screen and (max-width: 320px) {
       flex-direction: column;
       gap: 0;
       align-items: flex-end;

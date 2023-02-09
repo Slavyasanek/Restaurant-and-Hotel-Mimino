@@ -27,11 +27,12 @@
     margin-bottom: 16px;
     @include min_1024 {
       margin-top: 8px;
-      // maybe mb
+      margin-bottom: 52px;
     }
     @include min_1280 {
       font-size: 20px;
       margin-top: 16px;
+      margin-bottom: 40px;
     }
   }
   &__department {
