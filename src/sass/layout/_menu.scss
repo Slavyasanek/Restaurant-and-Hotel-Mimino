@@ -1,0 +1,123 @@
+.menu {
+  @include paddingY(32px);
+  color: var(--dark-color-for-elemenents-and-text);
+  background-color: var(--even-section-bcg);
+  min-width: 400px;
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    @include min_1024 {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    @include min_1024 {
+      margin-bottom: 40px;
+    }
+  }
+  &__tables {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    align-self: center;
+    margin-top: 30px;
+    @include min_1024 {
+      align-self: flex-end;
+    }
+  }
+}
+
+.menu__table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  @include min_1024 {
+    width: 411px;
+  }
+  @include min_1280 {
+    width: 485px;
+  }
+  tr {
+    border-bottom: 8px solid transparent;
+    @include min_1280 {
+      border-bottom: 12px solid transparent;
+    }
+    &:last-child {
+      border-bottom: 16px solid transparent;
+      @include min_1024 {
+        border-bottom: 20px solid transparent;
+      }
+    }
+  }
+  &-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: left;
+    margin-bottom: 16px;
+    @include min_1024 {
+      margin-bottom: 20px;
+    }
+    @include min_1280 {
+      font-size: 24px;
+    }
+  }
+  &-row {
+    &__title {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.214;
+      letter-spacing: 0.02em;
+      margin-bottom: 4px;
+      max-width: 220px;
+      @include min_1024 {
+        max-width: 100%;
+      }
+      @include min_1280 {
+        font-size: 16px;
+      }
+    }
+    &_dish {
+      width: 67.8%;
+    }
+  }
+  &-ingredients {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    max-width: 220px;
+    @include min_1280 {
+      max-width: 257px;
+    }
+  }
+  &-weight {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  &-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: right;
+    @include min_1280 {
+      font-size: 16px;
+    }
+  }
+}
