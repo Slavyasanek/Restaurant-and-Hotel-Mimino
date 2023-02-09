@@ -3,6 +3,13 @@
   color: var(--dark-color-for-elemenents-and-text);
   background-color: var(--even-section-bcg);
   min-width: 400px;
+  @include min_1024 {
+    padding-top: 58px;
+    padding-bottom: 40px;
+  }
+  @include min_1280 {
+    padding-bottom: 60px;
+  }
   &--flex {
     display: flex;
     flex-direction: column;
