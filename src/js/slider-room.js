@@ -11,7 +11,6 @@ function swiperSlider() {
           let swiper = new Swiper(slider.querySelector('.swiper'), {
             speed: 1500,
             loop: true,
-            //centeredSlides: true,
             loopFillGroupWithBlank: true,
             slidesPerGroup: 1,
             // centeredSlides: true,
@@ -57,7 +56,7 @@ function swiperSlider() {
               // when window width is >= 0px
               0: {
                 slidesPerView: 'auto',
-                // centeredSlides: true,
+                centeredSlides: true,
                 spaceBetween: 25,
               },
               // when window width is >= 1280px

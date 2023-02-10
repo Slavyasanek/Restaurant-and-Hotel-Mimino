@@ -3,6 +3,7 @@
   
   .swiper-slide {
     width: 194px !important;
+    border-radius: 2px;
     transition: all 0.5s ease-in-out;
     & .swiper-inner > img {
       object-fit: contain;
