@@ -1,6 +1,6 @@
 .room-slider {
   // direction: rtl;
-  
+
   .swiper-slide {
     width: 194px !important;
     border-radius: 2px;
@@ -33,13 +33,20 @@
     }
   }
   .swiper-btns {
-    @include max_1023 {
-        padding-left: 15px;
-    }
     @include min_1024 {
-        display: flex;
-        justify-content: flex-start;
+      display: flex;
+      justify-content: flex-start;
     }
+  }
+}
+
+.swiper-btns--room-reverse {
+  @include max_1023 {
+    padding-left: 15px;
+  }
+  @include min_1024 {
+    display: flex;
+    justify-content: flex-start;
   }
   .swiper-button-prev {
     margin-right: 0;

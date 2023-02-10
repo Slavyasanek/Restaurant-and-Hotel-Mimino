@@ -1,59 +1,63 @@
-.room-two {
+.room-three {
+  background-color: var(--even-section-bcg);
   @include paddingY(32px);
   @include min_1024 {
-    padding-top: 62px;
+    padding-top: 66px;
     padding-bottom: 40px;
   }
   @include min_1280 {
-    padding-top: 76px;
+    padding-top: 72px;
   }
   &__description {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
     @include min_1024 {
-      flex-direction: row;
+      flex-direction: row-reverse;
       margin-bottom: 48px;
+    }
+    @include between_1024_1279 {
+      justify-content: space-around;
     }
     @include min_1280 {
       margin-bottom: 50px;
     }
   }
+  &__title {
+    @include min_1024 {
+      text-align: left;
+    }
+  }
+  &__text {
+    text-align: right;
+    @include max_1023 {
+      align-self: flex-end;
+    }
+    &--align {
+      text-align: left;
+    }
+  }
   &__img {
-    align-self: flex-end;
+    align-self: flex-start;
     margin-top: 32px;
     position: relative;
     z-index: 99;
     @include min_1024 {
-      margin-top: -94;
-      margin-left: 26px;
+      margin-top: -98px;
     }
     @include min_1280 {
-      margin-left: 30px;
-      margin-top: -109px;
+      margin-top: -104px;
+      margin-right: 45px;
     }
   }
   &__interaction {
     @include min_1024 {
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
     }
     @include min_1280 {
       align-items: center;
     }
-  }
-}
-
-.room__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  @include max_1023 {
-    margin-top: 20px;
-  }
-  @include between_1024_1279 {
-    padding-top: 41px;
   }
 }
