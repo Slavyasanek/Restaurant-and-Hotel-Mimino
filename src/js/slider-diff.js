@@ -47,7 +47,11 @@ function swiperSlider() {
               1024: {
                 slidesPerView: 3,
                 spaceBetween: 34,
-                // centeredSlides: false,
+                loop: true,
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+              },
               },
               // when window width is >= 1280px
               1280: {
