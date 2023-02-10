@@ -1,0 +1,52 @@
+.room-slider {
+  // direction: rtl;
+  .swiper-slide {
+    max-width: 194px !important;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-in-out;
+    & .swiper-inner > img {
+      object-fit: contain;
+    }
+    @include max_1023 {
+      &.swiper-slide-next,
+      &.swiper-slide-prev {
+        opacity: 0.5;
+      }
+    }
+    @include min_1280 {
+      max-width: 254px !important;
+    }
+  }
+  .swiper {
+    // тінь
+    margin-top: -60px;
+    padding-top: 60px;
+    @include min_414 {
+      margin-left: -15px;
+    }
+    @include min_1024 {
+      margin-right: -20px;
+      margin-left: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .swiper-wrapper,
+  .swiper {
+    @include min_1024 {
+      max-width: 428px;
+    }
+    @include min_1280 {
+      max-width: 548px;
+    }
+  }
+  .swiper-btns {
+    padding-left: 15px;
+  }
+  .swiper-button-prev {
+    margin-right: 0;
+  }
+  .swiper-button-next {
+    margin-right: 32px;
+  }
+}
