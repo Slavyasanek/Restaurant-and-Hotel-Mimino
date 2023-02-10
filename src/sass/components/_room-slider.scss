@@ -1,8 +1,8 @@
 .room-slider {
   // direction: rtl;
+  
   .swiper-slide {
-    max-width: 194px !important;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    width: 194px !important;
     transition: all 0.5s ease-in-out;
     & .swiper-inner > img {
       object-fit: contain;
@@ -14,21 +14,12 @@
       }
     }
     @include min_1280 {
-      max-width: 254px !important;
+      width: 254px !important;
     }
   }
   .swiper {
-    // тінь
-    margin-top: -60px;
-    padding-top: 60px;
-    @include min_414 {
+    @include max_1023 {
       margin-left: -15px;
-    }
-    @include min_1024 {
-      margin-right: -20px;
-      margin-left: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
     }
   }
   .swiper-wrapper,
@@ -41,7 +32,13 @@
     }
   }
   .swiper-btns {
-    padding-left: 15px;
+    @include max_1023 {
+        padding-left: 15px;
+    }
+    @include min_1024 {
+        display: flex;
+        justify-content: flex-start;
+    }
   }
   .swiper-button-prev {
     margin-right: 0;

@@ -1,22 +1,58 @@
 .room-two {
     @include paddingY(32px);
+    @include min_1024 {
+        padding-top: 62px;
+        padding-bottom: 40px;
+    }
+    @include min_1280 {
+        padding-top: 76px;
+    }
     &__description {
         display: flex;
         flex-direction: column;
         margin-bottom: 32px;
+        @include min_1024 {
+            flex-direction: row;
+            margin-bottom: 48px;
+        }
+        @include min_1280 {
+            margin-bottom: 50px;
+        }
     }
     &__img {
         align-self: flex-end;
         margin-top: 32px;
+        position: relative;
+        z-index: 99;
+        @include min_1024 {
+            margin-top: -94;
+            margin-left: 26px;
+        }
+        @include min_1280 {
+            margin-left: 30px;
+            margin-top: -109px;
+        }
     }
-    // &__interaction {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    &__interaction {
+        @include min_1024 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include min_1280 {
+            align-items: center;
+        }
+    }
     &__buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
+        @include max_1023 {
+            margin-top: 20px;
+        }
+        @include max_1279 {
+            padding-top: 41px;
+        }
     }
 }
