@@ -63,6 +63,28 @@
   }
 }
 
+.room__company-title {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  @include min_1024 {
+    margin-top: 4px;
+    margin-bottom: 62px;
+  }
+  @include min_1280 {
+    margin-bottom: 72px;
+  }
+}
+
+.room__text {
+  max-width: 258px;
+  @include min_1024 {
+    max-width: 439px;
+  }
+  @include min_1280 {
+    max-width: 400px;
+  }
+}
+
 .modal {
   &__title {
     font-family: 'Times New Roman', sans-serif;
@@ -106,5 +128,29 @@
     @include min_1024 {
       font-size: 16px;
     }
+  }
+}
+
+.room__title {
+  & > span {
+    text-transform: none;
+  }
+  text-transform: uppercase;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--dark-color-for-elemenents-and-text);
+  margin-bottom: 12px;
+  @include min_1024 {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  @include min_1280 {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 24px;
   }
 }
