@@ -14,7 +14,7 @@ function swiperSlider() {
             //centeredSlides: true,
             loopFillGroupWithBlank: true,
             slidesPerGroup: 1,
-            centeredSlides: true,
+            // centeredSlides: true,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
@@ -61,7 +61,7 @@ function swiperSlider() {
                 spaceBetween: 25,
               },
               // when window width is >= 1280px
-              1028: {
+              1024: {
                 slidesPerView: 2,
                 spaceBetween: 40,
                 centeredSlides: false,
