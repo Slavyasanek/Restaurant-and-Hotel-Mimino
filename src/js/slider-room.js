@@ -56,8 +56,8 @@ function swiperSlider() {
               // when window width is >= 0px
               0: {
                 slidesPerView: 'auto',
-                centeredSlides: true,
-                spaceBetween: 25,
+                // centeredSlides: true,
+                spaceBetween: 16,
               },
               // when window width is >= 1280px
               1024: {

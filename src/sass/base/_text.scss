@@ -78,7 +78,7 @@
 .room__text {
   max-width: 258px;
   @include min_1024 {
-    max-width: 439px;
+    max-width: 400px;
   }
   @include min_1280 {
     max-width: 400px;

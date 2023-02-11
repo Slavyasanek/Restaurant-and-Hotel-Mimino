@@ -25,6 +25,7 @@
   }
   .swiper-wrapper,
   .swiper {
+    max-width: 284px;
     @include min_1024 {
       max-width: 428px;
     }

@@ -16,9 +16,9 @@
       flex-direction: row-reverse;
       margin-bottom: 48px;
     }
-    @include between_1024_1279 {
-      justify-content: space-around;
-    }
+    // @include between_1024_1279 {
+    //   justify-content: space-around;
+    // }
     @include min_1280 {
       margin-bottom: 50px;
     }
@@ -33,6 +33,13 @@
     @include max_1023 {
       align-self: flex-end;
     }
+    @include min_1024 {
+      display: flex;
+      flex-direction: column;
+    }
+    @include min_1280 {
+      width: 511px;
+    }
     &--align {
       text-align: left;
     }
@@ -44,10 +51,11 @@
     z-index: 99;
     @include min_1024 {
       margin-top: -98px;
+      margin-right: 45px;
     }
     @include min_1280 {
       margin-top: -104px;
-      margin-right: 45px;
+      margin-right: 26px;
     }
   }
   &__interaction {
