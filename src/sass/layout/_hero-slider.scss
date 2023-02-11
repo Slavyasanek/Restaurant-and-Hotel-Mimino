@@ -1,7 +1,8 @@
 .room-hero {
   width: 100%;
   position: relative;
-  //   slider
+  max-width: 2000px;
+  margin: 0 auto;
   .swiper {
     max-height: 740px;
     @include min_1024 {
