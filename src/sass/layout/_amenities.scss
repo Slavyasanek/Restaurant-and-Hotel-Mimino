@@ -1,0 +1,98 @@
+.amenities {
+  @include paddingY(32px);
+  @include min_1024 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  @include min_1280 {
+    @include paddingY(48px);
+  }
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--dark-color-for-elemenents-and-text);
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    &--wrapper {
+      @include min_1024 {
+        display: flex;
+        flex-direction: row;
+        margin: -40px;
+        .amenities__text {
+          width: calc((100% - 4 * 20px) / 2);
+          margin: 40px;
+        }
+      }
+      @include min_1280 {
+        margin: -80px;
+        .amenities__text {
+          width: calc((100% - 4 * 40px) / 2);
+          margin: 80px;
+        }
+      }
+    }
+    &:first-of-type {
+      @include min_1024 {
+        max-width: 90%;
+      }
+      @include min_1280 {
+        max-width: 70%;
+      }
+    }
+  }
+  &__subtitle {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    color: var(--dark-color-for-elemenents-and-text);
+    margin-bottom: 16px;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    @include min_1024 {
+      align-self: flex-end;
+    }
+    @include min_1280 {
+        margin-right: 40px;
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--brown-yellow-text-color);
+    column-gap: 12px;
+    fill: var(--brown-yellow-text-color);
+    transition: all 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.1);
+      color: var(--hover-and-decorative-YellowAkzent);
+      fill: var(--hover-and-decorative-YellowAkzent);
+    }
+    @include min_1024 {
+      font-size: 20px;
+      column-gap: 16px;
+    }
+  }
+}
