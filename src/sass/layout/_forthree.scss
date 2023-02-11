@@ -16,9 +16,6 @@
       flex-direction: row-reverse;
       margin-bottom: 48px;
     }
-    // @include between_1024_1279 {
-    //   justify-content: space-around;
-    // }
     @include min_1280 {
       margin-bottom: 50px;
     }
