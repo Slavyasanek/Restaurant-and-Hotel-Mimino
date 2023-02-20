@@ -66,11 +66,13 @@
     border-radius: 25px;
     border: 1px solid var(--hover-and-decorative-YellowAkzent);
     transition: color 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08),
-    background-color 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
+      background-color 0.6s cubic-bezier(0.53, 0.23, 0.68, 1.08);
     @include min_1024 {
       max-width: 434px;
     }
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       background-color: var(--hover-and-decorative-YellowAkzent);
       color: var(--dark-color-for-elemenents-and-text);
     }

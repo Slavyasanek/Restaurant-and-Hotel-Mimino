@@ -5,3 +5,4 @@ import './js/slider-hero';
 import './js/slider-room';
 import './js/imask-set';
 import './js/modals-set';
+import './js/calc';
