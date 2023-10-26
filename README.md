@@ -30,11 +30,7 @@ This repository contains the code for a restaurant and hotel website, which comb
 - HTML5
 - CSS3
 - JavaScript
-- Responsive Design for Mobile and Desktop
+- Responsive Design for Mobile, Tablet and Desktop
 
 ## Demo
 Enjoy the website [live demo](https://slavyasanek.github.io/Restaurant-and-Hotel-Mimino/)
-
----
-
-Note: Replace "[Your Name]" and "[Your Email Address]" with your actual information.
